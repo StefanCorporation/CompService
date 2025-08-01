@@ -1,276 +1,124 @@
- body {
-      margin: 0;
-      overflow-x: hidden;
-      background: #0a0a2a; /* Dark blue for Windows tech vibe */
-      color: #ffffff;
-    }
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background: #0a0a2a; /* Dark blue for Windows tech vibe */
+  color: #ffffff;
+  min-height: 100vh; /* Ensure body can grow */
+}
 
-    .background {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      z-index: -2; /* Below carousel and navbar */
-      overflow: hidden;
-    }
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -2; /* Below carousel and navbar */
+  overflow: hidden;
+  
+}
 
-    .tech-waves {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      filter: drop-shadow(0 0 8px #00f0ff);
-    }
+.tech-waves {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 0 8px #00f0ff);
+}
 
-    .wave-line {
-      stroke-dasharray: 50;
-      stroke-dashoffset: 50;
-      animation: pulse 4s ease-in-out infinite;
-    }
+.wave-line {
+  stroke-dasharray: 50;
+  stroke-dashoffset: 50;
+  animation: pulse 4s ease-in-out infinite;
+}
 
-    @keyframes pulse {
-      0% { stroke-dashoffset: 50; }
-      100% { stroke-dashoffset: 0; }
-    }
+@keyframes pulse {
+  0% { stroke-dashoffset: 50; }
+  100% { stroke-dashoffset: 0; }
+}
 
-    .animated-element {
-      position: absolute;
-      width: 50px;
-      height: 50px;
-      transform-origin: center;
-      color: #00f0ff; /* Icon color */
-      filter: drop-shadow(0 0 10px #00f0ff); /* Glow effect */
-      box-shadow: 0 0 15px #00f0ff; /* Additional glow */
-      will-change: transform, opacity; /* Optimize performance */
-    }
 
-    /* Specific animations with unique trajectories */
-    .windows-logo-1 {
-      transform: translate(5vw, 5vh);
-      animation: fly-windows-logo-1 15s ease-in-out infinite;
-    }
-    .windows-logo-2 {
-      transform: translate(85vw, 15vh);
-      animation: fly-windows-logo-2 15s ease-in-out infinite;
-    }
-    .wifi-logo-1 {
-      transform: translate(10vw, 70vh);
-      animation: fly-wifi-logo-1 15s ease-in-out infinite;
-    }
-    .wifi-logo-2 {
-      transform: translate(90vw, 40vh);
-      animation: fly-wifi-logo-2 15s ease-in-out infinite;
-    }
-    .internet-logo-1 {
-      transform: translate(0, 30vh);
-      animation: fly-internet-logo-1 15s ease-in-out infinite;
-    }
-    .internet-logo-2 {
-      transform: translate(70vw, 60vh);
-      animation: fly-internet-logo-2 15s ease-in-out infinite;
-    }
-    .wrench {
-      transform: translate(20vw, 40vh);
-      animation: fly-wrench 15s ease-in-out infinite;
-    }
-    .screwdriver {
-      transform: translate(60vw, 10vh);
-      animation: fly-screwdriver 15s ease-in-out infinite;
-    }
-    .wire-1 {
-      transform: translate(10vw, 50vh);
-      animation: fly-wire-1 15s ease-in-out infinite;
-    }
-    .wire-2 {
-      transform: translate(80vw, 30vh);
-      animation: fly-wire-2 15s ease-in-out infinite;
-    }
-    .cable-1 {
-      transform: translate(0, 60vh);
-      animation: fly-cable-1 15s ease-in-out infinite;
-    }
-    .cable-2 {
-      transform: translate(70vw, 40vh);
-      animation: fly-cable-2 15s ease-in-out infinite;
-    }
-    .pc-part-1 {
-      transform: translate(20vw, 20vh);
-      animation: fly-pc-part-1 15s ease-in-out infinite;
-    }
-    .pc-part-2 {
-      transform: translate(60vw, 70vh);
-      animation: fly-pc-part-2 15s ease-in-out infinite;
-    }
+.animated-element {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  transform-origin: center;
+  color: #00f0ff; /* Icon color */
+  filter: drop-shadow(0 0 10px #00f0ff); /* Glow effect */
+  box-shadow: 0 0 15px #00f0ff; /* Additional glow */
+  will-change: transform, opacity; /* Optimize performance */
+}
 
-    /* Unique keyframes for individual trajectories */
-    @keyframes fly-windows-logo-1 {
-      0% { transform: translate(5vw, 5vh) scale(0.5); opacity: 0.7; }
-      20% { transform: translate(30vw, 20vh) scale(0.6); opacity: 0.9; }
-      40% { transform: translate(50vw, 70vh) scale(0.7); opacity: 1; }
-      60% { transform: translate(80vw, 40vh) scale(0.6); opacity: 0.8; }
-      80% { transform: translate(10vw, 90vh) scale(0.5); opacity: 0.9; }
-      100% { transform: translate(5vw, 5vh) scale(0.5); opacity: 0.7; }
-    }
 
-    @keyframes fly-windows-logo-2 {
-      0% { transform: translate(85vw, 15vh) scale(0.6); opacity: 0.8; }
-      20% { transform: translate(60vw, 80vh) scale(0.7); opacity: 1; }
-      40% { transform: translate(40vw, 30vh) scale(0.6); opacity: 0.9; }
-      60% { transform: translate(20vw, 90vh) scale(0.5); opacity: 0.7; }
-      80% { transform: translate(70vw, 10vh) scale(0.6); opacity: 0.8; }
-      100% { transform: translate(85vw, 15vh) scale(0.6); opacity: 0.8; }
-    }
+.floating-icons {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: -1;
+}
 
-    @keyframes fly-wifi-logo-1 {
-      0% { transform: translate(10vw, 70vh) scale(0.6); opacity: 0.7; }
-      20% { transform: translate(40vw, 40vh) scale(0.7); opacity: 0.9; }
-      40% { transform: translate(70vw, 10vh) scale(0.8); opacity: 1; }
-      60% { transform: translate(90vw, 60vh) scale(0.7); opacity: 0.8; }
-      80% { transform: translate(20vw, 90vh) scale(0.6); opacity: 0.9; }
-      100% { transform: translate(10vw, 70vh) scale(0.6); opacity: 0.7; }
-    }
+.bounce-icon {
+  position: absolute;
+  font-size: 40px;
+  color: #00f0ff;
+  filter: drop-shadow(0 0 8px #00f0ff);
+  width: 40px;
+  height: 40px;
+}
 
-    @keyframes fly-wifi-logo-2 {
-      0% { transform: translate(90vw, 40vh) scale(0.7); opacity: 0.8; }
-      20% { transform: translate(60vw, 70vh) scale(0.8); opacity: 1; }
-      40% { transform: translate(30vw, 20vh) scale(0.7); opacity: 0.9; }
-      60% { transform: translate(80vw, 50vh) scale(0.6); opacity: 0.7; }
-      80% { transform: translate(10vw, 80vh) scale(0.7); opacity: 0.8; }
-      100% { transform: translate(90vw, 40vh) scale(0.7); opacity: 0.8; }
-    }
 
-    @keyframes fly-internet-logo-1 {
-      0% { transform: translate(0, 30vh) scale(0.5); opacity: 0.7; }
-      20% { transform: translate(30vw, 60vh) scale(0.6); opacity: 0.9; }
-      40% { transform: translate(60vw, 10vh) scale(0.7); opacity: 1; }
-      60% { transform: translate(90vw, 80vh) scale(0.6); opacity: 0.8; }
-      80% { transform: translate(20vw, 40vh) scale(0.5); opacity: 0.9; }
-      100% { transform: translate(0, 30vh) scale(0.5); opacity: 0.7; }
-    }
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Above SVG but below content */
+}
 
-    @keyframes fly-internet-logo-2 {
-      0% { transform: translate(70vw, 60vh) scale(0.6); opacity: 0.8; }
-      20% { transform: translate(40vw, 20vh) scale(0.7); opacity: 1; }
-      40% { transform: translate(10vw, 90vh) scale(0.6); opacity: 0.9; }
-      60% { transform: translate(80vw, 30vh) scale(0.5); opacity: 0.7; }
-      80% { transform: translate(50vw, 70vh) scale(0.6); opacity: 0.8; }
-      100% { transform: translate(70vw, 60vh) scale(0.6); opacity: 0.8; }
-    }
+/* Navbar and carousel */
+header, .swiper {
+  position: relative;
+  z-index: 1; /* Above background */
+}
 
-    @keyframes fly-wrench {
-      0% { transform: translate(20vw, 40vh) scale(0.5) rotate(0deg); opacity: 0.7; }
-      20% { transform: translate(50vw, 70vh) scale(0.6) rotate(90deg); opacity: 0.9; }
-      40% { transform: translate(80vw, 20vh) scale(0.7) rotate(180deg); opacity: 1; }
-      60% { transform: translate(30vw, 90vh) scale(0.6) rotate(270deg); opacity: 0.8; }
-      80% { transform: translate(60vw, 50vh) scale(0.5) rotate(360deg); opacity: 0.9; }
-      100% { transform: translate(20vw, 40vh) scale(0.5) rotate(0deg); opacity: 0.7; }
-    }
+.nav-link {
+  color: #ffffff !important;
+  font-family: 'Consolas', monospace;
+  transition: color 0.3s, text-shadow 0.3s;
+  position: relative;
+}
 
-    @keyframes fly-screwdriver {
-      0% { transform: translate(60vw, 10vh) scale(0.5) rotate(0deg); opacity: 0.8; }
-      20% { transform: translate(30vw, 60vh) scale(0.6) rotate(90deg); opacity: 1; }
-      40% { transform: translate(90vw, 30vh) scale(0.7) rotate(180deg); opacity: 0.9; }
-      60% { transform: translate(40vw, 80vh) scale(0.6) rotate(270deg); opacity: 0.7; }
-      80% { transform: translate(70vw, 20vh) scale(0.5) rotate(360deg); opacity: 0.8; }
-      100% { transform: translate(60vw, 10vh) scale(0.5) rotate(0deg); opacity: 0.8; }
-    }
+.nav-link:hover, .nav-link.active {
+  color: #00f0ff !important;
+  text-shadow: 0 0 8px #00f0ff, 0 0 12px #1e90ff;
+}
 
-    @keyframes fly-wire-1 {
-      0% { transform: translate(10vw, 50vh) scale(0.5); opacity: 0.7; }
-      20% { transform: translate(40vw, 30vh) scale(0.6); opacity: 0.9; }
-      40% { transform: translate(70vw, 80vh) scale(0.7); opacity: 1; }
-      60% { transform: translate(90vw, 20vh) scale(0.6); opacity: 0.8; }
-      80% { transform: translate(20vw, 90vh) scale(0.5); opacity: 0.9; }
-      100% { transform: translate(10vw, 50vh) scale(0.5); opacity: 0.7; }
-    }
+.nav-link:hover::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #00f0ff;
+  box-shadow: 0 0 5px #00f0ff;
+  animation: underline-glow 0.5s ease-in-out;
+}
 
-    @keyframes fly-wire-2 {
-      0% { transform: translate(80vw, 30vh) scale(0.6); opacity: 0.8; }
-      20% { transform: translate(50vw, 90vh) scale(0.7); opacity: 1; }
-      40% { transform: translate(20vw, 10vh) scale(0.6); opacity: 0.9; }
-      60% { transform: translate(70vw, 60vh) scale(0.5); opacity: 0.7; }
-      80% { transform: translate(40vw, 40vh) scale(0.6); opacity: 0.8; }
-      100% { transform: translate(80vw, 30vh) scale(0.6); opacity: 0.8; }
-    }
+@keyframes underline-glow {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
 
-    @keyframes fly-cable-1 {
-      0% { transform: translate(0, 60vh) scale(0.5); opacity: 0.7; }
-      20% { transform: translate(30vw, 30vh) scale(0.6); opacity: 0.9; }
-      40% { transform: translate(60vw, 90vh) scale(0.7); opacity: 1; }
-      60% { transform: translate(90vw, 10vh) scale(0.6); opacity: 0.8; }
-      80% { transform: translate(20vw, 80vh) scale(0.5); opacity: 0.9; }
-      100% { transform: translate(0, 60vh) scale(0.5); opacity: 0.7; }
-    }
+/* Additional fixes for scrolling */
+#hero {
+  min-height: 100vh; /* Ensure hero section can grow */
+}
 
-    @keyframes fly-cable-2 {
-      0% { transform: translate(70vw, 40vh) scale(0.6); opacity: 0.8; }
-      20% { transform: translate(40vw, 70vh) scale(0.7); opacity: 1; }
-      40% { transform: translate(10vw, 20vh) scale(0.6); opacity: 0.9; }
-      60% { transform: translate(80vw, 50vh) scale(0.5); opacity: 0.7; }
-      80% { transform: translate(50vw, 90vh) scale(0.6); opacity: 0.8; }
-      100% { transform: translate(70vw, 40vh) scale(0.6); opacity: 0.8; }
-    }
-
-    @keyframes fly-pc-part-1 {
-      0% { transform: translate(20vw, 20vh) scale(0.5); opacity: 0.7; }
-      20% { transform: translate(50vw, 60vh) scale(0.6); opacity: 0.9; }
-      40% { transform: translate(80vw, 30vh) scale(0.7); opacity: 1; }
-      60% { transform: translate(10vw, 90vh) scale(0.6); opacity: 0.8; }
-      80% { transform: translate(40vw, 50vh) scale(0.5); opacity: 0.9; }
-      100% { transform: translate(20vw, 20vh) scale(0.5); opacity: 0.7; }
-    }
-
-    @keyframes fly-pc-part-2 {
-      0% { transform: translate(60vw, 70vh) scale(0.6); opacity: 0.8; }
-      20% { transform: translate(30vw, 40vh) scale(0.7); opacity: 1; }
-      40% { transform: translate(90vw, 10vh) scale(0.6); opacity: 0.9; }
-      60% { transform: translate(50vw, 80vh) scale(0.5); opacity: 0.7; }
-      80% { transform: translate(80vw, 20vh) scale(0.6); opacity: 0.8; }
-      100% { transform: translate(60vw, 70vh) scale(0.6); opacity: 0.8; }
-    }
-
-    #particles-js {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1; /* Above SVG but below content */
-    }
-
-    /* Navbar and carousel */
-    header, .swiper {
-      position: relative;
-      z-index: 1; /* Above background */
-    }
-
-    .nav-link {
-      color: #ffffff !important;
-      font-family: 'Consolas', monospace;
-      transition: color 0.3s, text-shadow 0.3s;
-      position: relative;
-    }
-
-    .nav-link:hover, .nav-link.active {
-      color: #00f0ff !important;
-      text-shadow: 0 0 8px #00f0ff, 0 0 12px #1e90ff;
-    }
-
-    .nav-link:hover::after {
-      content: '';
-      position: absolute;
-      bottom: -2px;
-      left: 0;
-      width: 100%;
-      height: 2px;
-      background: #00f0ff;
-      box-shadow: 0 0 5px #00f0ff;
-      animation: underline-glow 0.5s ease-in-out;
-    }
-
-    @keyframes underline-glow {
-      0% { width: 0; }
-      100% { width: 100%; }
-    }
+.overflow-hidden {
+  max-height: none; /* Remove height constraint to allow scrolling */
+}
