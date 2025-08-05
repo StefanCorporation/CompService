@@ -114,10 +114,6 @@ header, .swiper {
   100% { width: 100%; }
 }
 
-/* Additional fixes for scrolling */
-#hero {
-  min-height: 100vh; /* Ensure hero section can grow */
-}
 
 .overflow-hidden {
   max-height: none; /* Remove height constraint to allow scrolling */

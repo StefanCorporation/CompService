@@ -48,8 +48,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   window.addEventListener("resize", () => {
     bouncers.forEach(b => {
-      b.position.x = Math.min(b.position.x, window.innerWidth - 40);
-      b.position.y = Math.min(b.position.y, window.innerHeight - 40);
+      b.position.x = Math.min(b.position.x, window.innerWidth - 80);
+      b.position.y = Math.min(b.position.y, window.innerHeight - 10);
     });
   });
 });
@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // Particles.js configuration
 particlesJS('particles-js', {
     particles: {
-    number: { value: 50, density: { enable: true, value_area: 800 } },
+    number: { value: 20, density: { enable: true, value_area: 800 } },
     color: { value: '#00f0ff' }, // Match palette
     shape: { type: 'circle' },
     opacity: { value: 0.5, random: true },
