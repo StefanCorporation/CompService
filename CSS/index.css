@@ -27,4 +27,13 @@
     font-size: 50px; 
 }
 
+.list {
+    font-size: large;
+}
 
+
+.footerLogo {
+    width: 20px;
+    height: 20px;
+    box-shadow: #00f0ff;
+}
