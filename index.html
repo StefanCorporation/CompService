@@ -27,14 +27,16 @@
       
     <!-- Animated elements -->
     <div class="floating-icons">
-        <i class="bounce-icon"><img src="./SVG/windows.svg" alt="windows"></i>
+        <i class="bounce-icon"><img src="./SVG/ethernet.svg" alt="ethernet"></i>
         <i class="bounce-icon"><img src="./SVG/wifi.svg" alt="wifi"></i>
         <i class="bounce-icon"><img src="./SVG/laptop.svg" alt="laptop"></i>
         <i class="bounce-icon"><img src="./SVG/cpu.svg" alt="cpu"></i>
         <i class="bounce-icon"><img src="./SVG/gpu.svg" alt="gpu"></i>
         <i class="bounce-icon"><img src="/SVG/hdd.svg" alt="hdd"></i>
         <i class="bounce-icon"><img src="./SVG/cd.svg" alt="cd"></i>
-        <i class="bounce-icon"><img src="./SVG/chrome.svg" alt="chrome"></i>
+        <i class="bounce-icon"><img src="./SVG/globe.svg" alt="globe"></i>
+        <i class="bounce-icon"><img src="./SVG/camera.svg" alt="ipcamera"></i>
+        <i class="bounce-icon"><img src="./SVG/folder.svg" alt="folder"></i>
     </div>
     <div id="particles-js"></div>
 </div>
@@ -92,7 +94,9 @@
                 <div class="swiper-slide">
                     <img src="./images/carousel/pexels-joshsorenson-1714208.jpg" alt="">
                 </div>
-                <div class="swiper-slide">Slide 9</div>
+                <div class="swiper-slide">
+                    <img src="./images/carousel/gpu.jpg" alt="">
+                </div>
             </div>       
             <div class="swiper-pagination"></div>
         </div>
@@ -140,11 +144,20 @@
                         <li class="list-group-item">🧩 იშვარი ნაწილების შოვნა</li>
                         <li class="list-group-item">🖨️ პრინრერის დაყენება</li>                    
                     </ul>
-                    <div class="card-body">
+                    <!-- <div class="card-body">
                         <img style="width: 30px;" class="" src="./SVG/location.svg" alt="location">
                         <small>თბილისი</small>
                         <img class="mx-3" style="width: 30px;" src="./SVG/whatsapp.svg" alt="whatsapp">
                         <small>558-21-55-77</small>
+                    </div> -->
+
+                    <div class="d-flex justify-content-center align-items-center mt-3 mb-3">
+                        <img style="width: 30px; vertical-align: middle;" src="./SVG/location.svg" alt="location">
+                        <small class="me-2">თბილისი</small>
+                        <a href="https://wa.me/571082714" target="_blank">
+                            <img class="mx-3" style="width: 30px; vertical-align: middle;" src="./SVG/whatsapp.svg" alt="whatsapp">
+                        </a>
+                        <small class="me-2">558-21-55-77</small>
                     </div>
                 </div>
             </div>
@@ -163,13 +176,13 @@
                         <li class="list-group-item">👨‍💻 სისტემის ჩაწერა/განახლება</li>
                         <li class="list-group-item">💡 სისტემის სრული უზრუვნელყოფა</li>
                     </ul>
-                    <div class="card-body">
-                        <img style="width: 30px;" class="" src="./SVG/location.svg" alt="location">
-                        <small>თბილისი</small>
-                        <a href="https://wa.me/579844888" target="_blank">
-                            <img class="mx-3" style="width: 30px;" src="./SVG/whatsapp.svg" alt="whatsapp">
+                         <div class="d-flex justify-content-center align-items-center mt-3 mb-3">
+                        <img style="width: 30px; vertical-align: middle;" src="./SVG/location.svg" alt="location">
+                        <small class="me-2">თბილისი</small>
+                        <a href="https://wa.me/571082714" target="_blank">
+                            <img class="mx-3" style="width: 30px; vertical-align: middle;" src="./SVG/whatsapp.svg" alt="whatsapp">
                         </a>
-                        <small>558-21-55-77</small>
+                        <small class="me-2">558-21-55-77</small>
                     </div>
                 </div>
             </div>
@@ -189,11 +202,13 @@
                         <li class="list-group-item">🛜 Wi-Fi როუტერის დაყენება და დაპარამეტრება</li>
                         <li class="list-group-item">📹 IP-კამერების ინსტალაცია</li>
                     </ul>
-                    <div class="card-body">
-                        <img style="width: 30px;" class="" src="./SVG/location.svg" alt="location">
-                        <small>თბილისი</small>
-                        <img class="mx-3" style="width: 30px;" src="./SVG/whatsapp.svg" alt="whatsapp">
-                        <small>558-21-55-77</small>
+                    <div class="d-flex justify-content-center align-items-center mt-3 mb-3">
+                        <img style="width: 30px; vertical-align: middle;" src="./SVG/location.svg" alt="location">
+                        <small class="me-2">თბილისი</small>
+                        <a href="https://wa.me/571082714" target="_blank">
+                            <img class="mx-3" style="width: 30px; vertical-align: middle;" src="./SVG/whatsapp.svg" alt="whatsapp">
+                        </a>
+                        <small class="me-2">558-21-55-77</small>
                     </div>
                 </div>
             </div>
@@ -240,9 +255,9 @@
             </div> 
             <div class="col-lg-6"> 
                 <h1 class="baseFont glowwords display-5 fw-bold text-body-emphasis lh-1 mb-5">📩 კონტაქტი</h1> 
-                <p class="mt-5 lead">ჩვენი სერვისი მუშაობას ახდენს თბილისის მასშტაბით!</p> 
-                <p class="lead">კონსულტაციისთვის დაგვიკავშირდით ამ ნომერზე: ☎️ 558-21-55-77</p>
-                <p class="lead">ან მოგვწერეთ ⬇️ </p>
+                <p style="color: yellow;" class="mt-5 lead">ჩვენი სერვისი მუშაობას ახდენს თბილისის მასშტაბით!</p> 
+                <p style="color: yellow;" class="lead">კონსულტაციისთვის დაგვიკავშირდით ამ ნომერზე: ☎️ 558-21-55-77</p>
+                <p style="color: yellow;" class="lead">ან მოგვწერეთ ⬇️ </p>
 
           <ul class="col-md-4 justify-content-center list-unstyled d-flex"> 
 
@@ -278,57 +293,39 @@
 
 
 
-
-
-<!-- Add this for scrolling test -->
-<section id="additional-content">
-  <div class="container py-5">
-    <h2>More Content</h2>
-    <p>This is additional content to test scrolling. Add more text or sections here to exceed the viewport height.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  </div>
-</section>
-
-
-
-
 <div class="container">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"> 
-        <div class="col-md-4 d-flex align-items-center"> 
-            <a href="https://stefancorporation.github.io/MyWebSite/"
-                 class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"> 
-                <img class="footerLogo" src="./images/logo/reactor.png" alt="stefan corporation">
-                <span class="glowwords mb-3 mb-md-0 text-body-secondary">| Stefan Corporation © 2025</span> 
-            </a> 
-        </div> 
-          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex"> 
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-12 col-md-4 d-flex align-items-center">
+            <a href="https://stefancorporation.github.io/MyWebSite/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                <img class="footer-logo" src="./images/logo/reactor.png" alt="Stefan Corporation" style="max-width: 50px; height: auto;">
+                <span class="glowwords mb-3 mb-md-0 text-body-secondary">| Stefan Corporation © 2025</span>
+            </a>
+        </div>
 
-                <li class="ms-3">
-                    <a href="https://wa.me/571082714" target="_blank">
-                        <img src="https://cdn.simpleicons.org/whatsapp/25D366" alt="WhatsApp" width="30" />
-                    </a>
-                </li> 
-                <li class="ms-3">
-                    <a href="https://t.me/proger77777" target="_blank">
-                        <img src="https://cdn.simpleicons.org/telegram/26A5E4" alt="Telegram" width="30" />
-                    </a>
-                </li>
-                <li class="ms-3">
-                    <a href="https://m.me/Chingiz Musaev " target="_blank">
-                        <img src="https://cdn.simpleicons.org/facebook/FFFFFF" alt="facebook" width="30" />
-                    </a>
-                </li>
-                <li class="ms-3">
-                    <a href="mailto:Proger77777@gmail.com">
-                        <img src="https://cdn.simpleicons.org/google/EA4335" alt="Gmail" width="30" />
-                    </a>
-                </li>
-
-            </ul> 
+        <ul class="nav col-12 col-md-4 justify-content-end list-unstyled d-flex flex-wrap">
+            <li class="ms-3">
+                <a href="https://wa.me/571082714" target="_blank" class="social-icon">
+                    <img src="https://cdn.simpleicons.org/whatsapp/25D366" alt="WhatsApp" width="30" height="30">
+                </a>
+            </li>
+            <li class="ms-3">
+                <a href="https://t.me/proger77777" target="_blank" class="social-icon">
+                    <img src="https://cdn.simpleicons.org/telegram/26A5E4" alt="Telegram" width="30" height="30">
+                </a>
+            </li>
+            <li class="ms-3">
+                <a href="https://m.me/Chingiz Musaev" target="_blank" class="social-icon">
+                    <img src="https://cdn.simpleicons.org/facebook/FFFFFF" alt="Facebook" width="30" height="30">
+                </a>
+            </li>
+            <li class="ms-3">
+                <a href="mailto:Proger77777@gmail.com" class="social-icon">
+                    <img src="https://cdn.simpleicons.org/google/EA4335" alt="Gmail" width="30" height="30">
+                </a>
+            </li>
+        </ul>
     </footer>
 </div>
-
 
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
